@@ -400,6 +400,58 @@ body{
 
     & main{
         background-color: red;
+        & .news-container{
+            display: flex;
+            flex-direction: row;
+        
+            & .move-btn{
+                position: absolute;
+                z-index: 100;
+                height:36.5em;
+                width: 3em;
+                margin:0;
+                padding: 1em;
+                background-color: transparent;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-color: transparent;
+                background-size: contain;
+                background-image: url(./Imagenes/direction-arrow.png);
+            }
+
+            /* Alineamos el otro boton con absolute */
+            & .previous{
+                rotate: 180deg;
+            }
+
+            & .next{
+                left: 100.25em;
+            }
+
+            & .container-main-principal{
+                min-width: 90em;
+                padding: 1em;
+                padding: 0;
+
+
+                & .bg-container-main-principal{
+                    width: 99em;
+                    height:35em;
+                    margin:0;
+                    align-self: center;
+
+                    & .cabezera-imagen-texto-main{
+                        position: absolute;
+                    }
+
+                    & .contenido-imagen-texto-main{
+                        position: absolute;
+                    }
+
+                }
+                
+            }
+        }
     }
     & footer{
         background-color: blue;
