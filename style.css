@@ -47,12 +47,13 @@ body{
     font-size: 1vi;
     margin:0;
     font-family: 'Open Sans', sans-serif;
+    min-width: fit-content; 
 
     & header{
         margin:0;
         padding:0;
         position: sticky;
-        min-width: fit-content;
+        min-width: fit-content; 
 
         & .container-barra-lateral{
             position: absolute;
@@ -71,6 +72,7 @@ body{
                 margin:0;
                 padding: 0;
                 z-index: 120;
+                min-width: fit-content;
 
                 & h3, h2, td, p{
                     padding: 2em;
@@ -407,10 +409,10 @@ body{
             & .move-btn{
                 position: absolute;
                 z-index: 100;
-                height:36.5em;
-                width: 3em;
+                height:36.5vi;
+                width: 3vi;
                 margin:0;
-                padding: 1em;
+                padding: 1vi;
                 background-color: transparent;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -425,29 +427,37 @@ body{
             }
 
             & .next{
-                left: 100.25em;
+                left: 95vi;
             }
 
             & .container-main-principal{
-                min-width: 90em;
+                min-width: 100%;
                 padding: 1em;
                 padding: 0;
 
+                & .cabezera-imagen-texto-main{
+                    position: absolute;
+                    font-size: 40px;
+                    background-color: transparent;
+                    width: fit-content;
+                    top:30vi;
+                    left: 50rem;
+                }
 
+                & .contenido-imagen-texto-main{
+                    position: absolute;
+                    font-size: 20px;
+                    background-color: transparent;
+                    width: fit-content;
+                    top:33rem;
+                    left: 50rem;
+                }
+                
                 & .bg-container-main-principal{
-                    width: 99em;
-                    height:35em;
+                    width:100%;
+                    height:35vi;
                     margin:0;
                     align-self: center;
-
-                    & .cabezera-imagen-texto-main{
-                        position: absolute;
-                    }
-
-                    & .contenido-imagen-texto-main{
-                        position: absolute;
-                    }
-
                 }
                 
             }
